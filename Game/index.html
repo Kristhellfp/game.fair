@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recicla y Juega</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="contenedor-juego">
+        <div class="cabecera">
+            <h1>¡Recicla y Gana! <span class="icono-recicla">♻️</span></h1>
+            <div class="puntuacion">
+                <span>Puntos:</span>
+                <span id="puntos">0</span>
+            </div>
+        </div>
+
+        <div class="contenedores">
+            <div class="contenedor organico" id="organico">
+                <div class="etiqueta">Orgánico</div>
+            </div>
+            <div class="contenedor plastico" id="plastico">
+                <div class="etiqueta">Plástico</div>
+            </div>
+            <div class="contenedor papel" id="papel">
+                <div class="etiqueta">Papel</div>
+            </div>
+            <div class="contenedor vidrio" id="vidrio">
+                <div class="etiqueta">Vidrio</div>
+            </div>
+        </div>
+
+        <div class="objetos" id="objetos">
+        </div>
+
+        <div class="mensaje" id="mensaje">¡Arrastra cada objeto a su lugar!</div>
+
+        <button class="boton-reinicio" onclick="reiniciarJuego()">Jugar Otra Vez</button>
+    </div>
+
+    <script src="juego.js"></script>
+</body>
+</html>
